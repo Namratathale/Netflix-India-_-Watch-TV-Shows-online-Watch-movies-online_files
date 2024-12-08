@@ -1,9 +1,11 @@
-Images
-Features![Screenshot 2024-12-08 182722](https://github.com/user-attachments/assets/b836bb35-ef31-460f-b5fa-a59ee6b58d8e)
+
+![Screenshot 2024-12-08 182722](https://github.com/user-attachments/assets/b836bb35-ef31-460f-b5fa-a59ee6b58d8e)
 ![Screenshot 2024-12-08 182744](https://github.com/user-attachments/assets/18344b8d-f829-47d5-8d73-fd8de5c1bb45)
 ![Screenshot 2024-12-08 182816](https://github.com/user-attachments/assets/d0f81f90-e846-44f0-9835-ce6226c20f51)
-![Screenshot 2024-12-08 182926](https://github.com/user-attachments/assets/85f543f0-9a22-4c9a-b7a6-1e7a9b6cc5cd)
+![Screenshot 2024-12-08 235046](https://github.com/user-attachments/assets/4b4bd2d0-f181-426a-a479-b95fbfe0b9a0)
 
+
+Features
 
 Responsive Design: Adapts seamlessly to various screen sizes, including mobile, tablet, and desktop.
 
@@ -19,7 +21,7 @@ Technologies Used
 
 HTML: Structuring the content.
 
-CSS3: Styling and layout with responsive design principles
+CSS: Styling and layout with responsive design principles
 .
 JavaScript: Adding interactivity and dynamic content.
 
