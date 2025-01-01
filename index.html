@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2023.ico"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Netflix India _ Watch TV Shows online, Watch movies online</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.main {
+    height: 50vw;
+    width: 1346px;
+    background-size: max(1400px, 98vw);
+    background-repeat: no-repeat; 
+    color: #ffffff;  
+    background-image: url('images/background.jpg'); 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+.nav-bar{
+    padding: 18px;
+    padding-left: 150px;
+    position: relative;
+    /* margin: 20px; */
+}
+.select-btn{
+    padding: 5px;
+}
+.btn-eng{
+    width: 100%;
+    border-radius: 8px;
+    padding: 10%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    text-align: center;
+    font-weight: bold;
+}
+.btn-hin{
+    width: 100%;
+    padding: 10%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    text-align: center;
+    font-weight: bolder;
+}
+.btn-eng:hover{
+    background-color: rgb(39, 103, 254);
+    color: #ffffff
+}
+.btn-hin:hover{
+    background-color: rgb(39, 103, 254);
+    color: #ffffff
+}
+.btn-lang{
+    
+    padding: 6px;
+    border-color: rgb(106, 105, 105);
+    box-shadow: white 50 2 4 4rcap;
+    color: #ffffff;
+    background-color: transparent;
+    width: 135px;
+    height: 38px;
+    margin-left: 50vw;
+    margin-right: 5px;
+    margin-top: 18px;
+    backdrop-filter: blur(3px);
+}
+.btn-lang:hover{
+    border-style: double;
+    border-width: 3px;
+    animation-delay: 5s;
+    border-color: rgb(106, 105, 105);
+    box-shadow: rgb(62, 62, 62);
+    color: #ffffff;
+   
+}
+.popover {
+  position: absolute;
+  text-align: center;
+  top: 120px;
+  left: 120px;
+  display: none;
+  width: 120px;
+  /* padding: 10px; */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.popover-title {
+  font-weight: bold;
+}
+.lang-logo{
+  margin: 5px;
+}
+.lang-arro{
+  margin: 3px;
+}
+.popover-content {
+  margin-top: 10px;
+}
+.btn-signin{
+  width: 80px;
+  height: 35px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 18px;
+  border-radius: 7px;
+  background-color: rgba(255, 0, 0, 0.942);
+  font-family: sans-serif;
+  border-radius: 5px;
+}
+.section-center{
+  width: 100vw;
+  margin-top: 89%;
+  text-align: center;
+  align-content: center;
+  margin-left: 20%;
+  position: absolute;
+  top: -71vw;
+  left: -18vw;
+}
+.section-center h1{
+font-family: Arial Black; 
+font-size: 50px;
+}
+.section-center h6{
+  font-family: sans-serif; 
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 18px;
+}
+
+
+.form-group { 
+  position: relative; 
+  margin: 0px 0; 
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+} 
+input[type="email"] {
+   width: 30vw;
+   position: relative;
+   left: 360px;
+   top: 20px;
+   height: 60px;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #ffffff;
+    border: 1px solid #ccc ;
+     background: #ffffff;
+     backdrop-filter: blur(3px);
+     background-color: transparent ; /* Ensure background remains transparent */ 
+    } 
+    
+    input[type="email"]:focus {
+       background-color: transparent; 
+       color: #ffffff;
+       padding-top: 13px;/* Ensure background remains transparent on focus */ 
+    }
+     label {
+      /* placeholder label  */
+       position: absolute;
+       top: 34px;
+       left: 375px;
+       font-size: 16px;
+      padding-top: 5px;
+       color: #ababab;
+       transition: 0.2s;
+     }
+     input:focus + label, input:not(:placeholder-shown) + label {
+       top: 18px; left: 370px; font-size: 12px; color: #989898; 
+       /* floating label */
+    }
+      .error-message, .valid-message 
+     {
+      /* message at bottom of textbox */
+       display: none; 
+       font-size: 14px; 
+       position: absolute;
+       top: 85px;
+       left: 358px; 
+    } 
+     .error-message {
+       color: red; 
+      }
+        .valid-message{
+         color: red;
+       }
+        input.invalid {
+       border-color: red; 
+    }
+      input.valid {
+       border-color: green;
+     }
+     .btn-getstart{
+      position: relative;
+      border: 0px;
+      font-size: 25px;top: -40px;
+      left: 16vw;
+      font-family: sans-serif;
+      
+      background-color: rgba(255, 0, 0, 0.937);
+      color: #ffffff;
+      height: 60px;
+      width: 15vw;
+      border-radius: 5px;
+     }
+     .btn-getstart:hover{
+      background-color: rgb(213, 4, 4);
+      animation-delay: 3s;
+     }
+    .getstart-svg{
+      padding-left: 8px;
+      height: 20px;
+      font-weight: bold;
+      position: relative; 
+    }
+    /* ********** Page 2 ********** */
+    .page2{
+      height: 310vh;
+      width: 100vw;
+      background-image: url(images/linebackground1.png);
+      background-color: transparent;
+      position: absolute;
+      top: 98vh;
+
+    }
+    .Trending{
+      padding: 80px 150px 5px;
+       font-family: sans-serif;
+       font-weight: 500;
+       padding-left: 180px;
+
+    }
+    .Region-select{
+       background-color: rgba(255, 255, 255, 0.06);
+       backdrop-filter: blur(3px);
+       margin-left: 180px;
+       color: #ffffff;
+       padding: 10px;
+       border-radius: 5px;
+    }
+    .Type-select{
+       background-color: rgba(255, 255, 255, 0.06);
+       backdrop-filter: blur(3px);
+       margin-left: 12px;
+       color: #ffffff;
+       padding: 10px;
+       border-radius: 5px;
+    }
+    .option01,.option02{
+      color: #000000;
+    }
+    .option01:hover,.option02:hover{
+      background-color: rgb(0, 51, 255);
+    }
+    .carousel { 
+      position: relative;
+      left: 10vw;
+      margin-right: 20px;
+       max-width: 76%; 
+      margin-top: 18px; 
+      overflow: hidden;
+     } 
+     .slides { 
+      display: flex;
+       transition: transform 1s ease-in-out; 
+       margin-left: 100px;
+      
+    }
+     .slides img
+      {
+       width: 44%; 
+       height: 46vh;
+       margin-left: 11px;
+       padding: 10px; /* 100% / 4.5 images */ 
+       transition: transform 0.3s ease-in-out;
+       border-radius: 22px;
+     }
+      .slides img:hover { 
+      transform: scale(1.05); /* Slight zoom effect */
+      
+     }
+      .prev, .next { 
+        height: 150px;
+        position: absolute;
+         top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(255, 255, 255, 0.271);
+           color: white;
+            border: none;
+             padding: 10px; 
+             cursor: pointer; 
+             z-index: 1; 
+             font-size: 24px; 
+             border-radius: 15px;
+             transform: translate(20);
+            } 
+            .prev {
+               left: 10px; 
+              } 
+              .next { 
+                right: 10px; 
+              }
+              .hidden {
+                 display: none;
+                 }
+            .cards{
+              height:30vh; width: 15vw;
+               border: #ffffff;
+               border-radius: 12px;
+               background-color: #ffffff;
+                background: url(images/cardimg06.jpg);
+                background-size: 100vh;
+                position: relative; 
+                margin-top: 2vh;
+                margin-left: 47px;
+                left: 30vh;
+            }
+            .cards_heading{
+              padding-top: 28px;
+              padding-bottom: 10px;
+              font-family: sans-serif;
+            font-weight: 500;
+            padding-left: 180px;
+            }
+            .imagepos1{
+              position: relative;
+              left: 9vw;
+              bottom: 35px;
+            }
+            .imagepos2{
+              position: relative;
+              left: 9vw;
+              top:25px
+            }
+            .imagepos3{
+              position: relative;
+              left: 9vw;
+              top: -42px
+            }
+            .imagepos4{
+              position: relative;
+              left: 9vw;
+              top: -5px
+            }
+            .card_para{
+              color: #ffffff; 
+              padding: 15px;  
+              letter-spacing: 0.1cap;
+            }
+            .question_heading{
+              padding-top: 28px;
+              padding-bottom: 10px;
+              font-family: sans-serif;
+            font-weight: 500;
+            padding-left: 180px;
+            }
+            /* ********Questions*************** */
+            .faq { 
+              width: 50%;
+              margin-left: 180px;
+             } 
+            .question {
+  color: #ffffff;
+  height: 75px;
+  width: 73vw; 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  display: flex;
+  margin-bottom: 8px; 
+  justify-content: space-between; 
+  cursor: pointer; 
+  padding: 18px; 
+  background-color: #343434e0; 
+  border: 2px solid; 
+  border-radius: 12px;
+  border-color: #3b3b3bd5; 
+  transform: ease-in-out;
+  transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+.question:hover {
+  background-color: #5e5e5ed6;
+  border-color: #666666d5;
+}
+.answer {
+  width: 73vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: justify;
+  font-size: 18px;
+  padding: 0 15px; 
+  padding-bottom: 5px;
+  border: 2px solid; 
+  border-radius: 12px;
+  border-color: #393939d5;
+  margin-bottom: 10px;
+  background-color: #343434e0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+  opacity: 0;
+}
+.plus-icon {
+  color: #ffffffc0;
+  font-size: 37px;
+  font-family: Artifakt Element Thin;
+  font-weight: 100;
+  padding-bottom: 0px;
+  position: relative;
+  top: -15px;
+}
+.answer.open {
+  max-height: 500px; /* Adjust according to the content height */
+  padding: 15px;
+  opacity: 1;
+}
+.btn-getstart1{
+  font-family: sans-serif;
+      background-color: rgba(231, 3, 3, 0.893);
+      color: #ffffff;
+      height: 43px;
+      margin-top: 7vh;
+      font-size: 16px;
+      width: 11vw;
+      border-radius: 20px;
+}
+.footer { 
+  padding: 20px 0;
+   text-align: center; 
+} 
+.footer-container { 
+  display: flex; 
+  font-family: Artifakt Element Thin;
+  color: #d1d1d1;
+  flex-wrap: wrap; 
+  justify-content: center; margin: 0 auto; max-width: 1200px; 
+} 
+  
+.footer-column {  
+    /* flex: 1;  */
+    font-family: Artifakt Element Thin;
+    font-size: small;
+     padding: 20px; 
+    text-align: left;
+    min-width: 200px;
+  } 
+  
+  .footer-column ul {
+     list-style-type: none; padding: 0; 
+text-decoration: underline #d1d1d1 ;
+  } 
+  .footer-column ul li{ 
+    margin: 10px 0; 
+  } 
+  .footer-column ul li a { 
+    color: #cdcdcd; 
+    text-decoration: none;
+   } 
+  .footer-column ul li a:hover { 
+    text-decoration: none; 
+  } 
+  .footer-bottom { 
+    margin-top: 20px; 
+  } 
+  .footer-bottom option{ 
+    color: #ffffff;
+    background-color: #444; 
+  } 
+   .language-button 
+   {
+      background-color: #444;
+      border: none; 
+      color: #fff; 
+      cursor: pointer; 
+      padding: 10px 20px; 
+      border-radius: 12px;
+    } 
+    .language-button:hover { 
+      background-color: #555; 
+    } 
+    .footer-bottom p {
+       margin-top: 10px; 
+      }
+      .modal {
+         display: none; /* Ensure modal starts hidden */ 
+         position: fixed; z-index: 1; left: 0; top: 0; 
+         width: 100%; height: 100%; 
+         overflow: auto; 
+         background-color: rgba(0,0,0,0.4); 
+        } 
+        .modal-content {
+         margin: 10% auto; 
+         padding: 0px; 
+         border: 1px solid #888; 
+         background-color: rgb(24, 24, 24); background-size: 120vh; background-repeat: no-repeat; 
+         height: 85vh; width: 50vw; 
+         border-radius: 20px; box-shadow: inset; 
+        } 
+        .close {
+           color: #aaa; 
+           float: right; 
+           font-size: 28px; 
+           font-weight: bold; 
+           position: relative; 
+           left: 320px; 
+          } 
+          .close:hover, .close:focus {
+             color: black; 
+             text-decoration: none; 
+             cursor: pointer; 
+          } 
+          .modal-body {
+             padding: 20px; 
+          } 
+          .modal-btn {
+            background-color: #dc3545; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            font-size: 16px; 
+          }
+
+      #caption {
+         position: absolute; top: 63vh; left: 20px;
+        color: white;
+        font-size: 18px;
+        padding: 10px; border-radius: 5px;
+
+         /* detail of movies in modal */
+        }
+        .modal-body { padding: 20px; 
+          overflow-y: auto; /* Enable vertical scrolling */ 
+          height: calc(100% - 40px); /* Adjust height to ensure scrolling works */ 
+          background-size: cover; /* Make sure background covers the entire modal */ 
+          background-repeat: no-repeat; 
+          background-position: center; /* Center the background image */ 
+          position: relative; 
+        }
+        .modal-content{
+          padding: 0px; 
+          margin: 0px; 
+          border-radius: 20px;
+          background-color: rgb(26, 26, 26); 
+          background-size: 120vh ; 
+          background-repeat: no-repeat; 
+          overflow: hidden;
+          box-shadow: inset;
+          height: 85vh; width: 50vw;
+        }
+    </style>
+
+</head>
+
+ <body>
+
+    <!-- //////////// PART 1 ///////////////// -->
+    <div class="main">
+
+        <nav class="nav-bar d-flex flex-content-row">
+          <span>
+            <img class="Netflix_Logo" src="images/Netflix_Logo_PMS.png" alt="Netflix_logo" width="180" />
+          </span>
+                    <!-- Instead of Popover we can use This:
+                    <select class="select-btn">
+                    <option type="">English</option>
+                    <option type="">Hindi</option>
+                    <option type="">Marathi</option>
+                    </select> -->
+               <div>
+                <span class="btn btn-lang" id="myPopoverButton">
+                  <svg class="lang-logo" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 16 16" width="16" height="16" data-icon="LanguagesSmall" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path></svg><span id="textA"> English </span><svg class="lang-arro" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 16 16" width="16" height="16" data-icon="CaretDownSmall" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.5976 6.5C11.7461 6.5 11.8204 6.67956 11.7154 6.78457L8.23574 10.2643C8.10555 10.3945 7.89445 10.3945 7.76425 10.2643L4.28457 6.78457C4.17956 6.67956 4.25393 6.5 4.40244 6.5H11.5976Z" fill="currentColor"></path></svg></span>
+                </div>
+
+                    <div id="myPopover" class="popover">
+                        <button id="buttonB" class="btn btn-eng">English</button><br>
+                        <button id="buttonC" class="btn btn-hin">हिन्दी</button>
+                    </div>   
+                    <div>  
+                        <button class="btn btn-danger btn-signin">Sign-in</button>
+                    </div>
+        </nav>
+
+        <div class="section-center">
+          <h1>Unlimited movies,<br> TV shows and more</h1>
+          <h6>Starts at ₹149. Cancel at any time.</h6>
+          <p>Ready to watch? Enter your email to create or restart your membership. </p>
+        
+          <div class="form-group">
+             <input type="email" id="email" required class="form-control" placeholder="" id="floatingTextarea">
+              <label for="email">E-mail address</label> <span id="error-message" class="error-message"><span style="color: red; font-weight: bolder; height: 35px; width: 35px; ">&cross;</span> Email is required</span> <span id="valid-message" class="valid-message"><span style="color: red; font-weight: bolder; height: 35px; width: 35px; ">&cross;</span> Please enter a valid email address</span>
+              <button class="btn btn-danger btn-getstart">Get Started <svg class="getstart-svg" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronRightStandard" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg></button>
+            </div>
+         </div> 
+          <!-- ///////////////   Part 2  ///////////////////// -->
+
+         <div class="page2">
+            <!-- Dropdowns -->
+          <div>
+            <h3 class="Trending">Trending Now</h3>
+            <div>
+            <select id="region" class="Region-select">
+              <option value="1" class="option01">Indian</option>
+              <option value="2" class="option02">Global</option>
+            </select>
+            <select class="Type-select">
+              <option value="3" class="option01">Movies</option>
+              <option value="4" class="option02">TV Shows</option>
+            </select>
+          </div>
+
+         <!-- Slide structure -->
+          <div class="carousel"> 
+            <button class="prev" id="prevButton" onclick="changeSlide(-1)">&#10094;</button> 
+            <div class="slides" id="slides"> <!-- Slide Images will be dynamically inserted here --> </div> 
+            <button class="next" id="nextButton" onclick="changeSlide(1)">&#10095;</button> 
+          </div> 
+          
+          <!-- Custom Modal structure --> 
+
+       <div id="imageModal" class="modal"> 
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> <!--Adds Scrollbar-->
+          <div class="modal-content" id="modalContent"> 
+              <button type="button" class="close" id="closeModal" style="position: relative; left: 320px;">&times;</button> 
+             <div class="modal-body"> 
+              <p id="modalTitle" style="position: relative; top: 57vh"> <!--Year, type, etc. will inserted here  --></p>
+                <div id="caption" class="mt-3">
+                  <!--Year, type, etc. will inserted here -->
+                </div>
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>
+
+           <!-- ******** Info Cards ******** -->
+           <h3 class="cards_heading">More reasons to join</h3>
+           <div class="d-flex flex-content-row">
+          <div class="cards">
+            <p class="card_para">
+              Stories tailored to your taste, Watch and Enjoy with Netflix
+            </p>
+            <img class="imagepos1" src="images/image (5).svg" alt="1st"/>
+              
+          </div>
+          <div class="cards">
+            <p class="card_para">
+              A place just for kids
+            </p>
+            <img class="imagepos2" src="images/image (6).svg" alt="2nd">
+              
+          </div>
+          <div class="cards">
+            <p class="card_para">
+              Download anytime anywhere. Save favourites to your watchlist 
+            </p>
+            <img class="imagepos3" src="images/image (4).svg" alt="3rd">
+              
+          </div>
+          
+          <div class="cards">
+            <p class="card_para">
+             For your phone, tablet, laptop and TV
+            </p>
+            <img class="imagepos4" src="images/image (3).svg" alt="4th">
+              
+          </div>
+        </div>  <!-- cards end -->
+
+        <!-- ********** FAQ's ********* -->
+        <h3 class="question_heading">Frequently asked questions</h3>
+        <div class="faq"> 
+          <div class="question" onclick="toggleAnswer(this)"> 
+            <span>What is Netflix?</span> <span class="plus-icon">+</span> 
+          </div> 
+          <div class="answer"> 
+            <p>Netflix is a streaming service offering a wide variety of TV shows, movies, anime, documentaries, and more on internet-connected devices.<br>
+               You can watch as much as you want, whenever you want, without a single commercial – all for one low monthly price. There's always something
+                new to discover, and new TV shows and movies are added every week!</p> 
+              </div> 
+
+              <div class="question" onclick="toggleAnswer(this)"> 
+                <span>How much does Netflix cost?</span> 
+                <span class="plus-icon">+</span> 
+              </div> 
+              <div class="answer"> 
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from 149 to 
+                  ₹649 a month. No extra costs, no contracts.</p> 
+                  </div> 
+
+                  <div class="question" onclick="toggleAnswer(this)"> 
+                <span>Where can I watch?</span> 
+                <span class="plus-icon">+</span> 
+              </div> 
+                  <div class="answer"> 
+                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or
+                   on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br>
+                  You can also download your favourite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection.
+                   Take Netflix with you anywhere.</p> 
+                  </div>
+
+                  <div class="question" onclick="toggleAnswer(this)"> 
+                    <span>How do I cancel?</span> 
+                    <span class="plus-icon">+</span> 
+                  </div> 
+                  <div class="answer"> 
+                <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no 
+                  cancellation fees - start or stop your account anytime.</p> 
+                  </div>
+
+                  <div class="question" onclick="toggleAnswer(this)"> 
+                    <span>What can I watch on Netflix?</span> 
+                    <span class="plus-icon">+</span> 
+                  </div> 
+                  <div class="answer"> 
+                <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals,
+                   and more. Watch as much as you want, anytime you want.</p> 
+                  </div>
+
+                  <div class="question" onclick="toggleAnswer(this)"> 
+                    <span>Is Netflix good for kids?</span> 
+                    <span class="plus-icon">+</span> 
+                  </div> 
+                  <div class="answer"> 
+                <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.<br>
+                  Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don't want kids to see.</p> 
+                  </div>
+                </div>  <!-- questions end -->
+
+<!-- ********** Last Section ********** -->
+              <div class="last_section">
+                <center>
+                  <button class="btn btn-danger btn-getstart1">Get Started </button> <!-- Get started button 2 -->
+                  <p style="padding: 8px;">Create or restart your membership</p>
+                </center>
+              </div>
+
+              <footer class="footer">
+                  <div class="d-flex justify-content-left" style="margin-left: 170px;"> 
+                <p>Questions? Call 000-800-919-1743</p> 
+              </div> 
+              <br>
+
+              <div class="d-flex justify-content-center">
+                <div class="footer-column"> 
+                  <ul> 
+                  <li><a href="#">FAQ</a></li> 
+                  <li><a href="#">Investor Relations</a></li> 
+                  <li><a href="#">Privacy</a></li> 
+                  <li><a href="#">Speed Test</a></li> 
+                </ul> 
+              </div> 
+              <div class="footer-column"> 
+                  <ul> <li><a href="#">Help Centre</a></li> 
+                    <li><a href="#">Jobs</a></li> 
+                    <li><a href="#">Cookie Preferences</a></li> 
+                    <li><a href="#">Legal Notices</a></li> 
+                  </ul> 
+                </div> 
+                  <div class="footer-column"> 
+                    <ul> 
+                    <li><a href="#">Account</a></li> 
+                    <li><a href="#">Ways to Watch</a></li> 
+                    <li><a href="#">Corporate Information</a></li> 
+                    <li><a href="#">Only on Netflix</a></li> 
+                  </ul> 
+                  </div> 
+                  <div class="footer-column"> 
+                    <ul> 
+                    <li><a href="#">Media Centre</a></li> 
+                    <li><a href="#">Terms of Use</a></li> 
+                    <li><a href="#">Contact Us</a></li> 
+                  </ul> 
+                </div> 
+              <br>
+                  <div class="footer-bottom"> 
+                    <select class="language-button">
+                      <option style="color: #ffffff;" value="English">English</option>
+                      <option style="color: #ffffff;" value="Hindi">Hindi</option>
+                    </select> 
+                    <p>Netflix India</p> 
+                  </div> 
+                </div> 
+              </footer>
+
+        </div>  <!--page 2 end-->
+    </div>  <!-- the end -->
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      
+
+// ********* Language Button ******** //
+// popover //
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+
+    document.getElementById("myPopoverButton").addEventListener("click", function(event) {
+var button = this;
+var popover = document.getElementById("myPopover");
+
+// Calculate position below the button
+var rect = button.getBoundingClientRect();
+var top = rect.bottom + window.scrollY;
+var left = rect.left + window.scrollX;
+
+popover.style.top = top + "px" ;
+popover.style.left = left + "px";
+
+// Toggle popover visibility
+popover.style.display = (popover.style.display === "block") ? "none" : "block";
+
+// Prevent event propagation to document
+event.stopPropagation();
+});
+
+document.addEventListener("click", function(event) {
+var popover = document.getElementById("myPopover");
+
+// Check if click is outside the popover
+if (!popover.contains(event.target) && popover.style.display === "block") {
+popover.style.display = "none";
+}
+});
+// changing Eng and hindi //
+document.getElementById("buttonB").addEventListener("click", function() {
+let textA = document.getElementById("textA");
+textA.innerText = " English ";
+});
+
+document.getElementById("buttonC").addEventListener("click", function() {
+let textA = document.getElementById("textA");
+textA.innerText = " हिन्दी ";
+});
+
+document.getElementById("email").addEventListener("input", function() {
+let emailInput = this.value;
+let errorMessage = document.getElementById("error-message");
+let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+if (!emailPattern.test(emailInput)) {
+    errorMessage.style.display = "block";
+    this.classList.add("invalid");
+} else {
+    errorMessage.style.display = "none";
+    this.classList.remove("invalid");
+}
+});
+// Email Verification //
+document.getElementById("email").addEventListener("input", function() {
+let emailInput = this.value;
+let errorMessage = document.getElementById("error-message");
+let validMessage = document.getElementById("valid-message");
+let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+if (emailInput === "") {
+    errorMessage.style.display = "block";
+    validMessage.style.display = "none";
+    this.classList.add("invalid");
+    this.classList.remove("valid");
+} else if (!emailPattern.test(emailInput)) {
+    errorMessage.style.display = "none";
+    validMessage.style.display = "block";
+    this.classList.add("invalid");
+    this.classList.remove("valid");
+} else {
+    errorMessage.style.display = "none";
+    validMessage.style.display = "none";
+    this.classList.remove("invalid");
+    this.classList.add("valid");
+}
+});
+
+// ************* Slides *********** //
+let currentSlide = 0;
+const imagesPerSlide = 3;
+
+// Array of slide images  //
+const carouselImages = [
+'images/Devaramov.webp', 'images/Dopattimov.webp', 'images/Meiyazamov.webp', 'images/kalkimov.webp',
+'images/BhoolBhumov2.webp', 'images/AAAABQB3Wm713-pd4FPsVNbQcgjcHI6SH9HzKyuoLT3JTJsC1bXmHLMpCLjA.webp', 'images/Khelmov.webp', 'images/AAAABRZhdEIX6X_tguhBE7pbrdUqozGJ0ALpmBASefnQbIpsUpdUYXlXce5i.webp',
+'images/theJackingmov.webp', 'images/Baghiramov.webp'
+];
+//Array of Modal Images //
+const modalDetails = [
+{
+    background: 'images/Devara.png',
+    title: ' 2024 . U/A 16+ . Movie . Action . Drama',
+    caption: 'A mighty sea warrior takes a violent stand against the criminal deeds of his village. Years later, his mild-mannered son walks a path of his own.'
+},
+{
+    background: 'images/Dopatti.png',
+    title: ' 2024 . U/A 16+ . Movie . Trriller . Mistries . Drama',
+    caption: 'A puzzling investigation leads a no-nonsense cop down a dark path involving the vicious rivalry between twin sisters and the volatile man they both love.'
+},
+{
+    background: 'images/Meiyaz.png',
+    title: ' 2024 . U/A 7+ . Drama',
+    caption: 'A man makes a bittersweet journey back to his hometown after 22 years and meets an insistent yet kindhearted relative whose name he cannot remember.'
+},
+{
+    background: 'images/kalki.png',
+    title: ' 2024 . U/A 13+ . Movie . Sci-Fi . Action ',
+    caption: 'The future of those in the dystopian city of Kasi is altered when the destined arrival of Lord Vishnus final avatar launches a war against darkness.'
+},
+{
+    background: 'images/BhoolBhu2.png',
+    title: ' 2022 . U/A 13+ . Movie . Horror . Comedy',
+    caption: 'When strangers Reet and Ruhan cross paths, their journey leads to an abandoned mansion and a dreaded spirit who has been trapped for 18 years.'
+},
+{
+    background: 'images/vijay.png',
+    title: ' 2024 . U/A 13+ . Movie . Adventure . Drama',
+    caption: 'An adventurous, foul-mouthed former swimming coach reaches for record-breaking glory when he attempts a triathlon at 69 years old.'
+},
+{
+    background: 'images/khel.png',
+    title: ' 2024 . U/A 16+ . Movie . Emotional . Comedy',
+    caption: 'An unhappily married couple and five friends decide to share every call or text they get over one night with each other. There is nothing to hide — right?'
+},
+{
+    background: 'images/timecut.png',
+    title: ' 2024 . U/A 16+ . Movie . Horror . Sci-Fi',
+    caption: 'A teen in 2024 accidentally time-travels to 2003, days before a masked killer murders her sister. Can she change the past without destroying the future?'
+},
+{
+    background: 'images/buckingham.png',
+    title: ' 2024 . U/A 16+ . Movie . Crime . Mystery',
+    caption: 'When a teen boy’s murder rattles a quiet English town, a grieving detective uncovers the hidden hostilities beneath its idyllic surface.'
+},
+{
+    background: 'images/baghira.png',
+    title: ' 2024 . U/A 16+ . Crime . Action . Adventure',
+    caption: 'Dismayed by corruption and violence, a virtuous police officer becomes a masked vigilante to deliver lethal justice to criminals and crooked cops alike.'
+},
+// can Add more objects for other images with different backgrounds and captions
+];
+
+// slide changing and arrows previous, next //
+const slidesContainer = document.getElementById("slides");
+carouselImages.forEach((image, index) => {
+const imgElement = document.createElement("img");
+imgElement.src = image;
+imgElement.alt = `Image ${index + 1}`;
+imgElement.onclick = function () {
+    openModal(modalDetails[index]);
+};
+slidesContainer.appendChild(imgElement);
+});
+
+function changeSlide(direction) {
+const slides = document.querySelector('.slides');
+const totalSlides = slides.children.length;
+const visibleSlides = 4.5;
+const maxSlideIndex = totalSlides - visibleSlides;
+
+currentSlide += direction * imagesPerSlide;
+if (currentSlide < 0) {
+    currentSlide = 0;
+} else if (currentSlide > maxSlideIndex) {
+    currentSlide = maxSlideIndex;
+}
+
+slides.style.transform = `translateX(-${currentSlide * (100 / visibleSlides)}%)`;
+updateArrows();
+}
+
+function updateArrows() {
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
+const totalSlides = document.querySelector('.slides').children.length;
+const visibleSlides = 4.5;
+
+if (currentSlide === 0) {
+    prevButton.classList.add("hidden");
+} else {
+    prevButton.classList.remove("hidden");
+}
+
+if (currentSlide >= totalSlides - visibleSlides) {
+    nextButton.classList.add("hidden");
+} else {
+    nextButton.classList.remove("hidden");
+}
+}
+// Content of Modal // 
+function openModal(details) {
+const modal = document.getElementById("imageModal");
+const modalContent = document.getElementById("modalContent"); // Ensure we target the modal content correctly
+const captionText = document.getElementById("caption");
+const modalTitle = document.getElementById("modalTitle");
+
+modal.style.display = "block";
+modalContent.style.backgroundImage = `url(${details.background})`;
+modalTitle.innerHTML = `.${details.title}`;
+captionText.textContent = details.caption;
+}
+
+// for closing modal when the user clicks on the close button
+document.getElementById("closeModal").onclick = function() {
+document.getElementById("imageModal").style.display = "none";
+}
+
+// for closing modal when the user clicks anywhere outside of the modal
+window.onclick = function(event) {
+const modal = document.getElementById("imageModal");
+if (event.target === modal) {
+    modal.style.display = "none";
+}
+}
+
+// Initialize with the first set of images
+changeSlide(0);
+
+
+// ************** Questions ************ //
+
+function toggleAnswer(element) {
+var allAnswers = document.querySelectorAll('.answer');
+var allPlusIcons = document.querySelectorAll('.plus-icon');
+var answer = element.nextElementSibling;
+var isCurrentlyOpen = answer.classList.contains('open');
+
+// Close all answers and reset all plus icons
+allAnswers.forEach(function(ans) {
+ans.classList.remove('open');
+ans.style.maxHeight = null;
+});
+allPlusIcons.forEach(function(icon) {
+icon.textContent = '+';
+});
+
+// If the clicked element was not open, open it
+if (!isCurrentlyOpen) {
+answer.classList.add('open');
+element.querySelector('.plus-icon').textContent = 'x';
+answer.style.maxHeight = answer.scrollHeight + "px";
+}
+}
+// ///////////////////
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+myInput.focus()
+})
+
+
+    </script>
+ 
+
+</body>
+</html>
