@@ -899,7 +899,7 @@ const imagesPerSlide = 3;
 
 // Array of slide images  //
 const carouselImages = [
-'images/Devaramov.webp', 'images/Dopattimov.webp', 'images/Meiyazamov.webp', 'images/Kalkimov.webp',
+'images/Devaramov.webp', 'images/Dopattimov.webp', 'images/Meiyazamov.webp', 'images/Khelmov.webp',
 'images/BhoolBhumov2.webp', 'images/AAAABQB3Wm713-pd4FPsVNbQcgjcHI6SH9HzKyuoLT3JTJsC1bXmHLMpCLjA.webp', 'images/Kalkimov.webp', 'images/AAAABRZhdEIX6X_tguhBE7pbrdUqozGJ0ALpmBASefnQbIpsUpdUYXlXce5i.webp',
 'images/theJackingmov.webp', 'images/Baghiramov.webp'
 ];
